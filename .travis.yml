@@ -1,3 +1,19 @@
 language: objective-c
 osx_image: xcode8
-script: — xcodebuild clean build -workspace starterpack.xcworkspace -scheme starterpack -destination “platform=iOS Simulator,name=iPhone 7 Plus”
+
+branches:
+    only:
+        - develop
+        - master
+env:
+    - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
+before_install:
+    - rvm install ruby-2.2.2
+    - gem install cocoapods
+    - gem install xcpretty -N
+    - brew update
+    - brew install swiftlint || true
+script:
+    - set -o pipefail
+    - xcodebuild -workspace starterpack.xcworkspace -scheme starterpack -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+    - swiftlint
