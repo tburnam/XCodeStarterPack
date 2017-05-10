@@ -20,6 +20,34 @@
                ReferencedContainer = "container:starterpack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9DF191941EC382620097E55C"
+               BuildableName = "starterpackTests.xctest"
+               BlueprintName = "starterpackTests"
+               ReferencedContainer = "container:starterpack.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9DF1919F1EC382620097E55C"
+               BuildableName = "starterpackUITests.xctest"
+               BlueprintName = "starterpackUITests"
+               ReferencedContainer = "container:starterpack.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

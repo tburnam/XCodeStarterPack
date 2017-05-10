@@ -25,7 +25,7 @@ class starterpackTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
 //        XCTAssertTrue(0 < 1)
-        XCTAssertTrue(0 > 1)
+        XCTAssertTrue(1 < 0)
     }
     
     func testPerformanceExample() {
