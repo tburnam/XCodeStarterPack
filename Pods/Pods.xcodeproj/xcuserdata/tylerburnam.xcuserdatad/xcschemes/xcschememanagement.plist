@@ -9,10 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-starterpackTests.xcscheme</key>
+		<key>Pods-starterpackTests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Pods-starterpackUITests.xcscheme</key>
 		<dict>

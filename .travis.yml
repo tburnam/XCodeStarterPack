@@ -10,10 +10,7 @@ env:
 before_install:
     - rvm install ruby-2.2.2
     - gem install cocoapods
-    - gem install xcpretty -N
     - brew update
-    - brew install swiftlint || true
 script:
     - set -o pipefail
-    - xcodebuild -workspace starterpack.xcworkspace -scheme starterpack -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-    - swiftlint
+    - xcodebuild -workspace starterpack.xcworkspace -scheme Pods-starterpackTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
